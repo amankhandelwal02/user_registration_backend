@@ -5,8 +5,8 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 
 const corsOptions = {
-  origin: "https://userregisrationfrontend.herokuapp.com",
-  // origin: "http://localhost:3000",
+  // origin: "https://userregisrationfrontend.herokuapp.com",
+  origin: "http://localhost:3000",
   credentials: true,
 };
 

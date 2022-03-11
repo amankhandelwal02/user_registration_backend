@@ -7,7 +7,7 @@ const auth = require("../src/middleware/auth")
 require("../src/database/connection");
 const userModal = require("../src/database/modals/usermodal");
 
-router.get("/", auth, async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const getUser = await userModal.find();
     res.status(200).json({ message: "Users found", getUser });
